@@ -425,32 +425,52 @@ Authorization:   Bearer sjahdiuashdiuahsodijsaoijdsioajdoijdoiasjdoijasoijdoiaso
 
 **1. Listar todas las ventas que se realizaron en el mes de julio de 2023**
 
+Get
+
+Version 1.0.0
+
 ```sql
-# Consulta realizada ....
+http://127.10.11.12:4012/clay/ventas
 ```
+
+Get
+
+Version 1.0.0
 
 **2. Seleccionar todos los empleados con sus respectivos cargos y municipios**
 
 ```sql
-# Consulta realizada ....
+http://127.10.11.12:4012/clay/empleados
 ```
 
 **3. Obtener la lista de todas las ventas con la información de los clientes y la forma de pago**
 
+Get
+
+Version 1.0.1
+
 ```sql
-# Consulta realizada ....
+http://127.10.11.12:4012/clay/ventas
 ```
 
 **4. Mostrar los detalles de todas las órdenes junto con los nombres de los empleados y clientes asociados**
 
+Get
+
+Version 1.0.0
+
 ```sql
-# Consulta realizada ....
+http://127.10.11.12:4012/clay/ordenes
 ```
 
 **5. Listar los productos disponibles en el inventario junto con su talla y color**
 
+Get
+
+Version 1.0.0
+
 ```sql
-# Consulta realizada ....
+http://127.10.11.12:4012/clay/productos
 ```
 
 **6. Mostrar todos los proveedores junto con la lista de insumos que suminis**
