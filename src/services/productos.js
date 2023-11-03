@@ -60,4 +60,27 @@ export default class Producto{
         ]).toArray();
         res.status(200).send({status:200,message: data})
     }
+    static async getPrendasStock(req,res){
+        if(!req.rateLimit) return;
+        const data = await inventario.aggregate([
+            {
+                $match: {}
+            },
+            {
+                $lookup: {
+                    from: 'prenda',
+                    localField: 'IdPrendaFk',
+                    foreignField: '_id',
+                    as: 'prendasDisponiblesStock'
+                }
+            },
+            {
+                $project: {
+                    _id: 0,
+                    prendasDisponiblesStock: 1
+                }
+            }
+        ]).toArray();
+        res.status(200).send({status:200,message: data})
+    }
 }

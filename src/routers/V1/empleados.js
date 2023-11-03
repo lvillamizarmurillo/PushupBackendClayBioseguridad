@@ -11,7 +11,7 @@ const version = routesVersioning();
 
 router.use(passporthelpert.authenticate('bearer', {session: false}));
 
-router.get('/', version({'1.0.0': validate(Empleado.getEmpleadosCargoMunicipio)}))
+router.get('/', version({'1.0.0': validate(Empleado.getEmpleadosCargoMunicipio),'1.0.1': validate(Empleado.getVentasEmpleados)}))
 
 export {
     router

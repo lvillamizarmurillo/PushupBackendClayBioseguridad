@@ -475,38 +475,62 @@ http://127.10.11.12:4012/clay/productos
 
 **6. Mostrar todos los proveedores junto con la lista de insumos que suminis**
 
+Get
+
+Version 1.0.0
+
 ```sql
-# Consulta realizada ....
+http://127.10.11.12:4012/clay/proveedores
 ```
 
 **7. Encontrar la cantidad de ventas realizadas por cada empleado**
 
+Get
+
+Version 1.0.1
+
 ```sql
-# Consulta realizada ....
+http://127.10.11.12:4012/clay/empleados
 ```
 
 **8. Mostrar la lista de órdenes en proceso junto con los nombres de los clientes y empleados asociados**
 
+Get
+
+Version 1.0.1
+
 ```sql
-# Consulta realizada ....
+http://127.10.11.12:4012/clay/ordenes
 ```
 
 **9. Obtener el nombre de la empresa y su respectivo representante legal junto con el nombre del municipio al que pertenecen**
 
+Get
+
+Version 1.0.0
+
 ```sql
-# Consulta realizada ....
+http://127.10.11.12:4012/clay/empresas
 ```
 
 **10. Mostrar la lista de prendas y su respectivo stock disponible**
 
+Get
+
+Version 1.0.1
+
 ```sql
-# Consulta realizada ....
+http://127.10.11.12:4012/clay/productos
 ```
 
 **11. Encontrar el nombre de los clientes que realizaron compras en una fecha específica junto con la cantidad de artículos comprados**
 
+Post
+
+Version 1.0.0
+
 ```sql
-# Consulta realizada ....
+http://127.10.11.12:4012/clay/ventas
 ```
 
 **12. Mostrar la lista de empleados y la duración de su empleo en años **

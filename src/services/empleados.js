@@ -28,4 +28,21 @@ export default class Empleado{
         ]).toArray();
         res.status(200).send({status:200,message: data})
     }
+    static async getVentasEmpleados(req,res){
+        if(!req.rateLimit) return;
+        const data = await empleado.aggregate([
+            {
+                $match: {}
+            },
+            {
+                $lookup: {
+                    from: 'venta',
+                    localField: '_id',
+                    foreignField: 'IdEmpleadoFk',
+                    as: 'ventas'
+                }
+            }
+        ]).toArray();
+        res.status(200).send({status:200,message: data})
+    }
 }

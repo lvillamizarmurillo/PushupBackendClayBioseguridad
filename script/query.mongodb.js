@@ -313,11 +313,11 @@ db.proveedor.insertMany([
 // Colección "insumo_proveedor"
 use("producion")
 db.insumo_proveedor.insertMany([
-  { _id: 1, IdInsumoFk: 1, IdProveedorFk: 6 },
-  { _id: 2, IdInsumoFk: 2, IdProveedorFk: 7 },
-  { _id: 3, IdInsumoFk: 3, IdProveedorFk: 8 },
-  { _id: 4, IdInsumoFk: 4, IdProveedorFk: 9 },
-  { _id: 5, IdInsumoFk: 5, IdProveedorFk: 10 }
+  { _id: 1, IdInsumoFk: 1, IdProveedorFk: 1 },
+  { _id: 2, IdInsumoFk: 2, IdProveedorFk: 2 },
+  { _id: 3, IdInsumoFk: 3, IdProveedorFk: 3 },
+  { _id: 4, IdInsumoFk: 4, IdProveedorFk: 4 },
+  { _id: 5, IdInsumoFk: 5, IdProveedorFk: 5 }
 ]);
 
 use("producion")

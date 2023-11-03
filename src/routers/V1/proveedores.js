@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { validate } from '../../validation/validaciones.js';
-import Producto from "../../services/productos.js";
+import Proveedor from "../../services/proveedores.js";
 import routesVersioning from 'express-routes-versioning';
 import passporthelpert from '../../config/passporthelpert.js';
 
@@ -10,7 +10,7 @@ const version = routesVersioning();
 
 router.use(passporthelpert.authenticate('bearer', {session: false}));
 
-router.get('/', version({'1.0.0': validate(Producto.getProductoTallaColor),'1.0.1': validate(Producto.getPrendasStock)}));
+router.get('/', version({'1.0.0': validate(Proveedor.getProveedorInsumos)}));
 
 export {
     router
