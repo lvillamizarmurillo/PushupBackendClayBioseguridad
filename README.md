@@ -6,7 +6,16 @@
 
 ## Necesario para probar el backend
 
-1.Se instalan las dependencias del package.json con el siguiente comando:
+1.Se debe tener instalado node:
+
+2.Se debe utilizar la version de nvm 18.16.1, el comando en linux es asi:
+
+```
+nvm install 18.16.1
+nvm use 18.16.1
+```
+
+3.Se instalan las dependencias del package.json con el siguiente comando:
 
 ```
 npm i
@@ -14,7 +23,7 @@ npm i
 
 
 
-1. Se debe poner en la variable .env.example, luego renombrarlo unicamente como .env, y en mongo uri sin los parentesis mencionando lo que debe haber en el campo.
+4.Se debe poner en la variable .env.example, luego renombrarlo unicamente como .env, y en mongo uri sin los parentesis mencionando lo que debe haber en el campo.
 
 ```
 MY_SERVER = {"hostname": "127.10.11.12", "port": 4012}
@@ -24,11 +33,13 @@ JWT = 'ertfdsdfsdfsdfaf'
 
 
 
-1. Para correr el servidor se usa el comando:
+5.Para correr el servidor se usa el comando:
 
 ```
 npm run dev
 ```
+
+6.Se debe tener instalada la extension de thunder en el visual para probar los endpoints.
 
 # MongoDb
 
